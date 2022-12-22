@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Primera pagina con Boostrap</title>
+	<!--El boostrap de CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!--Banner-->
+<!--Aqui en esta seccion se le puso a la clase banner y pusimos el background de color blanco eso viene en bootstrap-->
+<section class="banner bg-white">
+	<div class="container">
+		<!--Creando mas o menos una tabla con divs (una fila con 2 columnas) eso es bootstrap-->
+		<!--align-items-center nos permite centrar el contenido y los objetos -->
+		<!--justify-content-between nos permita justificar el contenido en las imagenes-->
+		<div class="row align-items-center justify-content-between">
+			<div class="col">
+				<h1 class="text-uppercase fw-bolder">No todo es programar</h1>
+				<!--la clase border-bottom le agrega como una linea abajo de color azul-->
+				<!--la clase border-primary le agrega el color primario a la linea y lo pone mas notorio abajo-->
+				<!--la clase border-5 hace la linea mas grande robusta-->
+				<!--la clase pb o pawdding pues ya se sabe separa la linea con el texto-->
+				<h2 class="border-bottom border-primary border-5 pb-4" >10 habilidades que todo programadar necesita</h2>
+				<!--target="_blank" permite que el link se abra en una nueva pestaña-->
+				<!--la class= "btn btn-primary" lo convierte el enlace a un boton-->
+				<!--la class= "Text-uppercase" lo pone el texto en mayusculas -->
+				<!--la class= "fs-3 fw-bolder" fs-3 hace la letra mas grande y el fw-bolder como que la de negrita -->
+				<a href="#" target="_blank" class="btn btn-primary text-uppercase fs-3 fw-bolder">¡Compralo ahora!</a>
+			</div>
+			<div class="col">
+					<!--Se crean los divs para tener mejor control de cada cosa o imagen-->
+				<div class="banner-img">
+					<!--class img-fluid pertenece a boostrap esto se adapta a la diferentes resoluciones automaticamenteg-->
+					<img src="image/descarga.png" alt="Portada de no todo es programar" class="img-fluid"/>
+				</div>
+				
+				<a href="#" class="comprar-link">
+						<!---el float-end hace que se alinea a la direcha-->
+				<img src="image/comprar.png" alt="comprar en amazon" class="float-end">
+				</a>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!--El boostrap de JAVASCRIPT-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>
