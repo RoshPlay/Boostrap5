@@ -27,3 +27,63 @@ background-position: top left;
 	/**/
 	font-weight: bolder;
 }
+
+/*hace referencia a la clase que estan en el div y dice banner-content
+y tambien la flechita (>) queria decir que afecte a las etiquetas h1*/
+
+.banner-content > h1{
+	font-size: 70px;
+	font-weight: normal;
+	margin-bottom: 2rem;
+}
+
+.banner-content > h2{
+	font-size: 40px;
+	font-weight: normal;
+	margin-bottom: 2rem;
+}
+
+/*son los queries */
+@include media-breakpoint-up(sm) { 
+	.banner-content > h1{
+	font-size: 80px;
+	line-height: 80px;
+	}
+
+	.banner-content > h2{
+	font-size: 35px;
+	}
+}
+
+@include media-breakpoint-up(md) { 
+
+	.banner-content > h1{
+	font-size: 90px;
+	line-height: 100px;
+	}
+}
+
+@include media-breakpoint-up(lg) { 
+
+	.banner-content > h1{
+	font-size: 70px;
+	line-height: 85px;
+	}
+
+	.banner-content > h2{
+	font-size: 40px;
+	}
+
+}
+
+@include media-breakpoint-up(xs) { 
+	.banner-content > h1{
+	font-size: 60px;
+	line-height: 60px;
+	}
+
+	.banner-content > h2{
+	font-size: 35px;
+	}
+ }
+
