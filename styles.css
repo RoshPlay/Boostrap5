@@ -1,11 +1,12 @@
 
 .comprar-link{
 	width: 150px;
-	alignment-baseline: central;
 }
+
 /*afecta a todas las secciones*/
-.section{
+section{
 	padding: 60px 03
+	
 }
 
 /*dando un fondo a la seccion del banner*/
@@ -41,6 +42,23 @@ y tambien la flechita (>) queria decir que afecte a las etiquetas h1*/
 	font-size: 40px;
 	font-weight: normal;
 	margin-bottom: 2rem;
+}
+
+.autor-img{
+	position: relative;
+	z-index: 1;
+}
+
+.autor-img::before{
+	position: absolute;
+	content:"";
+	left: -20px;
+	top: 20px;
+	width: 100%;
+	height: 100%;
+	border: 5px solid;
+	z-index: -1;
+
 }
 
 /*son los queries */
