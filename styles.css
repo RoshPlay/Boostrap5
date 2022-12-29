@@ -5,7 +5,7 @@
 
 /*afecta a todas las secciones*/
 section{
-	padding: 60px 03
+	padding: 30px 03
 	
 }
 
@@ -52,12 +52,17 @@ y tambien la flechita (>) queria decir que afecte a las etiquetas h1*/
 .autor-img::before{
 	position: absolute;
 	content:"";
-	left: -20px;
+	left: -30px;
 	top: 20px;
-	width: 100%;
+	width: 90%;
 	height: 100%;
 	border: 5px solid;
 	z-index: -1;
 
+}
+
+
+.libro{
+	background-color: #D7EDE2;
 }
 
